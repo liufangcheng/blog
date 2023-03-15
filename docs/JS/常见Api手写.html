@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>常见Api手写 | 前端小菜鸡</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="https://www.zpzpup.com/assets/image/favicon.ico">
+    <script src="/blog/assets/js/bodyClick.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/blog/assets/css/0.styles.b2e8fe90.css" as="style"><link rel="preload" href="/blog/assets/js/app.b8755775.js" as="script"><link rel="preload" href="/blog/assets/js/3.a92f9d4b.js" as="script"><link rel="preload" href="/blog/assets/js/1.6c17661e.js" as="script"><link rel="preload" href="/blog/assets/js/64.252e1c7a.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.88aca260.js"><link rel="prefetch" href="/blog/assets/js/11.3631bd11.js"><link rel="prefetch" href="/blog/assets/js/12.c259d081.js"><link rel="prefetch" href="/blog/assets/js/13.fae55513.js"><link rel="prefetch" href="/blog/assets/js/14.df00a919.js"><link rel="prefetch" href="/blog/assets/js/15.5e3237a1.js"><link rel="prefetch" href="/blog/assets/js/16.96d41e4a.js"><link rel="prefetch" href="/blog/assets/js/17.32448951.js"><link rel="prefetch" href="/blog/assets/js/18.2334059d.js"><link rel="prefetch" href="/blog/assets/js/19.1d3ef04d.js"><link rel="prefetch" href="/blog/assets/js/20.34ead5ef.js"><link rel="prefetch" href="/blog/assets/js/21.eb14432b.js"><link rel="prefetch" href="/blog/assets/js/22.21376ebe.js"><link rel="prefetch" href="/blog/assets/js/23.bc2788fd.js"><link rel="prefetch" href="/blog/assets/js/24.0f200720.js"><link rel="prefetch" href="/blog/assets/js/25.17df08e6.js"><link rel="prefetch" href="/blog/assets/js/26.ccb302cb.js"><link rel="prefetch" href="/blog/assets/js/27.355c2d28.js"><link rel="prefetch" href="/blog/assets/js/28.f6ff487f.js"><link rel="prefetch" href="/blog/assets/js/29.078c9e07.js"><link rel="prefetch" href="/blog/assets/js/30.aa9fa38d.js"><link rel="prefetch" href="/blog/assets/js/31.dc2d1bca.js"><link rel="prefetch" href="/blog/assets/js/32.5bc30528.js"><link rel="prefetch" href="/blog/assets/js/33.7b288250.js"><link rel="prefetch" href="/blog/assets/js/34.7d9a4ecc.js"><link rel="prefetch" href="/blog/assets/js/35.e8868038.js"><link rel="prefetch" href="/blog/assets/js/36.2a0a9d7d.js"><link rel="prefetch" href="/blog/assets/js/37.98860182.js"><link rel="prefetch" href="/blog/assets/js/38.ca44bd7d.js"><link rel="prefetch" href="/blog/assets/js/39.cd2dce3a.js"><link rel="prefetch" href="/blog/assets/js/4.7566ad07.js"><link rel="prefetch" href="/blog/assets/js/40.5da77935.js"><link rel="prefetch" href="/blog/assets/js/41.92a5e66a.js"><link rel="prefetch" href="/blog/assets/js/42.a9442159.js"><link rel="prefetch" href="/blog/assets/js/43.f8e5f0c6.js"><link rel="prefetch" href="/blog/assets/js/44.9d489625.js"><link rel="prefetch" href="/blog/assets/js/45.471f9e1a.js"><link rel="prefetch" href="/blog/assets/js/46.fb00a3cc.js"><link rel="prefetch" href="/blog/assets/js/47.2305e6ea.js"><link rel="prefetch" href="/blog/assets/js/48.17747254.js"><link rel="prefetch" href="/blog/assets/js/49.2f7d0e8d.js"><link rel="prefetch" href="/blog/assets/js/5.45073773.js"><link rel="prefetch" href="/blog/assets/js/50.1bb78932.js"><link rel="prefetch" href="/blog/assets/js/51.7eafb3d4.js"><link rel="prefetch" href="/blog/assets/js/52.554c9b52.js"><link rel="prefetch" href="/blog/assets/js/53.fe36698a.js"><link rel="prefetch" href="/blog/assets/js/54.10a5120d.js"><link rel="prefetch" href="/blog/assets/js/55.e0482996.js"><link rel="prefetch" href="/blog/assets/js/56.439b78b0.js"><link rel="prefetch" href="/blog/assets/js/57.0ac09a6e.js"><link rel="prefetch" href="/blog/assets/js/58.1c5bdb69.js"><link rel="prefetch" href="/blog/assets/js/59.ee407383.js"><link rel="prefetch" href="/blog/assets/js/6.4ae8142c.js"><link rel="prefetch" href="/blog/assets/js/60.a918a899.js"><link rel="prefetch" href="/blog/assets/js/61.ad6969b7.js"><link rel="prefetch" href="/blog/assets/js/62.10d8f7ad.js"><link rel="prefetch" href="/blog/assets/js/63.4f938606.js"><link rel="prefetch" href="/blog/assets/js/65.06b11359.js"><link rel="prefetch" href="/blog/assets/js/66.ead7818b.js"><link rel="prefetch" href="/blog/assets/js/67.51140871.js"><link rel="prefetch" href="/blog/assets/js/68.c0ae782c.js"><link rel="prefetch" href="/blog/assets/js/69.fa10ed2e.js"><link rel="prefetch" href="/blog/assets/js/7.a77ced76.js"><link rel="prefetch" href="/blog/assets/js/70.63522be3.js"><link rel="prefetch" href="/blog/assets/js/71.403887f8.js"><link rel="prefetch" href="/blog/assets/js/72.8d696f13.js"><link rel="prefetch" href="/blog/assets/js/73.fdf83827.js"><link rel="prefetch" href="/blog/assets/js/74.ac2a9e94.js"><link rel="prefetch" href="/blog/assets/js/75.fe9a0d8a.js"><link rel="prefetch" href="/blog/assets/js/76.c55a9804.js"><link rel="prefetch" href="/blog/assets/js/77.50238ba6.js"><link rel="prefetch" href="/blog/assets/js/78.5c65d330.js"><link rel="prefetch" href="/blog/assets/js/79.0555e43a.js"><link rel="prefetch" href="/blog/assets/js/8.03ff0907.js"><link rel="prefetch" href="/blog/assets/js/80.fb74606a.js"><link rel="prefetch" href="/blog/assets/js/81.40cdc875.js"><link rel="prefetch" href="/blog/assets/js/82.26d87f09.js"><link rel="prefetch" href="/blog/assets/js/83.ac026e00.js"><link rel="prefetch" href="/blog/assets/js/84.0518578b.js"><link rel="prefetch" href="/blog/assets/js/85.cf085e04.js"><link rel="prefetch" href="/blog/assets/js/86.180ff6ef.js"><link rel="prefetch" href="/blog/assets/js/87.0ee0d014.js"><link rel="prefetch" href="/blog/assets/js/88.98198940.js"><link rel="prefetch" href="/blog/assets/js/89.a0f19e79.js"><link rel="prefetch" href="/blog/assets/js/9.fcd89cd7.js"><link rel="prefetch" href="/blog/assets/js/90.86c8b3b8.js"><link rel="prefetch" href="/blog/assets/js/91.170d5b36.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b2e8fe90.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7a6c954e><div data-v-7a6c954e><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-7a6c954e data-v-7a6c954e><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-548f7490 data-v-7a6c954e data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>前端小菜鸡</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>LF</span>
+            
+          <span data-v-548f7490>2018 - </span>
+          2023
+        </a></span></div></div> <div class="hide" data-v-7a6c954e><header class="navbar" data-v-7a6c954e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://user-images.githubusercontent.com/84856433/216508004-9c54d340-b92c-4596-b7e5-511ab7f350ab.jpg" alt="前端小菜鸡" class="logo"> <span class="site-name">前端小菜鸡</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  我的主页
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  无关紧要
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      学习记录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/Html/BOM.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/CSS/accordion.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/JS/mobile.html" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/vue/ref.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7a6c954e></div> <aside class="sidebar" data-v-7a6c954e><div class="personal-info-wrapper" data-v-ec2c9702 data-v-7a6c954e><img src="https://user-images.githubusercontent.com/84856433/216508004-9c54d340-b92c-4596-b7e5-511ab7f350ab.jpg" alt="author-avatar" class="personal-img" data-v-ec2c9702> <h3 class="name" data-v-ec2c9702>
+    LF
+  </h3> <div class="num" data-v-ec2c9702><div data-v-ec2c9702><h3 data-v-ec2c9702>16</h3> <h6 data-v-ec2c9702>文章</h6></div> <div data-v-ec2c9702><h3 data-v-ec2c9702>6</h3> <h6 data-v-ec2c9702>标签</h6></div></div> <hr data-v-ec2c9702></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  我的主页
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  无关紧要
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      学习记录
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/Html/BOM.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/CSS/accordion.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/JS/mobile.html" class="nav-link"><i class="iconfont undefined"></i>
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/vue/ref.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><a href="/blog/docs/JS/mobile.html" class="sidebar-link">移动端踩坑指南</a></li><li><a href="/blog/docs/JS/Git.html" class="sidebar-link">Git</a></li><li><a href="/blog/docs/JS/常见Api手写.html" class="active sidebar-link">常见Api手写</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-548f7490 data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>常见Api手写</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>LF</span>
+            
+          <span data-v-548f7490>2018 - </span>
+          2023
+        </a></span></div></div> <div data-v-7a6c954e><main class="page"><div class="page-title" style="display:none;"><h1>常见Api手写</h1> <div data-v-01d8a6a8><i class="iconfont reco-account" data-v-01d8a6a8><span data-v-01d8a6a8>LF</span></i> <i class="iconfont reco-date" data-v-01d8a6a8><span data-v-01d8a6a8>2023-01-03</span></i> <i class="iconfont reco-eye" data-v-01d8a6a8><span id="/blog/docs/JS/%E5%B8%B8%E8%A7%81Api%E6%89%8B%E5%86%99.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-01d8a6a8><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="instanceof"><a href="#instanceof" class="header-anchor">#</a> instanceof</h2> <p><code>instanceof</code> 运算符用于检测构造函数的 <code>prototype</code> 属性是否出现在某个实例对象的原型链上</p> <p>使用如下：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>object <span class="token keyword">instanceof</span> <span class="token class-name">constructor</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>object</code>为实例对象，<code>constructor</code>为构造函数</p> <p>实现<code>instanceof</code></p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>     function myInstanceof(left,right){
+		//判断基础类型和null
+      if(typeof left !=&quot;object&quot;||left==null) return false;
+      let proto=Object.getPrototypeOf(left);
+      if(true){
+        if(proto===null) return false;
+        if(proto===right.prototype) return true;
+        proto=Object.getPrototypeOf(proto);
+      }
+     }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="new的实现"><a href="#new的实现" class="header-anchor">#</a> new的实现</h2> <ul><li>创建一个新的对象<code>obj</code></li> <li>将对象与构建函数通过原型链连接起来</li> <li>将构建函数中的<code>this</code>绑定到新建的对象<code>obj</code>上</li> <li>根据构建函数返回类型作判断，如果是原始值则被忽略，如果是返回对象，需要正常处理</li></ul> <div class="language-html line-numbers-mode"><pre class="language-html"><code> function newFun(Fun, ...arg) {
+        const obj = {};
+        obj.__proto__ = Fun.prototype;
+        let result = Fun.call(obj, args);
+        return result instanceof Object ? result : obj;
+      }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="深拷贝"><a href="#深拷贝" class="header-anchor">#</a> 深拷贝</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">const</span> obj2<span class="token operator">=</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>递归实现</p> <div class="language-html line-numbers-mode"><pre class="language-html"><code>      function deepClone(obj, map = new Map()) {
+        if (obj === null) return obj;
+ 		if (obj instanceof Date) return new Date(obj);
+  		if (obj instanceof RegExp) return new RegExp(obj);
+        if (typeof obj !== &quot;object&quot;)  return obj;
+        if (map.get(obj)) return map.get(obj);
+        let cloneObj = Array.isArray(obj) ? [] : {};
+        map.set(obj, cloneObj);
+        for (const key in obj) {
+          if (Object.hasOwnProperty(key)) {
+            const element = obj[key];
+            cloneObj[key] = deepClone(obj[key], map);
+          }
+        }
+        return obj;
+      }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h2 id="ajax实现"><a href="#ajax实现" class="header-anchor">#</a> ajax实现</h2> <p>实现 <code>Ajax</code>异步交互需要服务器逻辑进行配合，需要完成以下步骤：</p> <ul><li>创建 <code>Ajax</code>的核心对象 <code>XMLHttpRequest</code>对象</li> <li>通过 <code>XMLHttpRequest</code> 对象的 <code>open()</code> 方法与服务端建立连接</li> <li>构建请求所需的数据内容，并通过<code>XMLHttpRequest</code> 对象的 <code>send()</code> 方法发送给服务器端</li> <li>通过 <code>XMLHttpRequest</code> 对象提供的 <code>onreadystatechange</code> 事件监听服务器端你的通信状态</li> <li>接受并处理服务端向客户端响应的数据结果</li> <li>将处理结果更新到 <code>HTML</code>页面中</li></ul> <div class="language-html line-numbers-mode"><pre class="language-html"><code>//封装一个ajax请求
+function myAjax(options) {
+    //创建XMLHttpRequest对象
+    const xhr = new XMLHttpRequest()
+    //初始化参数的内容
+    options = options || {}
+    options.type = (options.type || 'GET').toUpperCase()
+    options.dataType = options.dataType || 'json'
+    const params = options.data
+
+    //发送请求
+    if (options.type === 'GET') {
+        xhr.open('GET', options.url + '?' + params, true)
+        xhr.send(null)
+    } else if (options.type === 'POST') {
+        xhr.open('POST', options.url, true)
+        xhr.send(params)
+
+    //接收请求
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            let status = xhr.status
+            if (status &gt;= 200 &amp;&amp; status &lt; 300) {
+                options.success &amp;&amp; options.success(xhr.responseText, xhr.responseXML)
+            } else {
+                options.fail &amp;&amp; options.fail(status)
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><blockquote></blockquote></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2023/3/15 16:24:50</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="Sakura" data-v-248d85d6><canvas id="canvas_sakura" style="z-index:2;" data-v-248d85d6></canvas></div><!----><div class="RibbonAnimation"></div><div id="goTop" class="hide-cat" data-v-bf92849a></div><div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;left:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/blog/assets/js/app.b8755775.js" defer></script><script src="/blog/assets/js/3.a92f9d4b.js" defer></script><script src="/blog/assets/js/1.6c17661e.js" defer></script><script src="/blog/assets/js/64.252e1c7a.js" defer></script>
+  </body>
+</html>
